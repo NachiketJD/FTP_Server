@@ -7,3 +7,4 @@ if __name__ == "__main__":
 
    s = socket.socket(socket.AF_INET, socket.SOCK_STREAMS) # TCP/IP 
    s.bind((host,port))
+   s.listen(totalClients)
