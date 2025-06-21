@@ -4,4 +4,6 @@ if __name__ == "__main__":
    host = '127.0.0.1'
    port = 12345
    totalClients = int(input('Enter number of Client: '))
-   s = socket.socket()
+
+   s = socket.socket(socket.AF_INET, socket.SOCK_STREAMS) # TCP/IP 
+   s.bind((host,port))
